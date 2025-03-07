@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!-- i stopped at 7.10 and later on 7.25 something -->
 
 <!DOCTYPE html>
@@ -37,4 +38,45 @@
 <!-- ' You picked ' + playerMove + ' Computer picked '+ computerMove + ' ' + result -->
 <!--  alert(`You picked ${playerMove}. Computer picked ${computerMove}.
      ${result}
+=======
+<!-- i stopped at 7.10 and later on 7.25 something -->
+
+<!DOCTYPE html>
+<html >
+<head>
+    <title>Rock Paper scissors</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <p class="title">Rock Paper Scissor</p>
+
+    <button class="move-button" onclick="playGame('rock')">
+        <img class="move-icon" src="images/rock-emoji.png">
+    </button>
+  
+    <button class="move-button" onclick="playGame('paper')">
+        <img class="move-icon" src="images/paper-emoji.png">
+    </button>
+    
+    <button class="move-button" onclick="playGame('scissor')">
+        <img class="move-icon" src="images/scissor-emoji.png">
+    </button>
+
+    <p class="js-result result"></p>
+
+    <p class="js-moves"></p>
+
+    <p class="js-score"></p>
+
+    <button onclick="reseting()">Reset score</button>
+
+    <script src="script.js"></script> 
+</body>
+</html>
+
+<!-- ' You picked ' + playerMove + ' Computer picked '+ computerMove + ' ' + result -->
+<!--  alert(`You picked ${playerMove}. Computer picked ${computerMove}.
+     ${result}
+>>>>>>> bd8f555 (game update)
      Wins : ${score.wins} , Losses : ${score.losses} , Ties : ${score.ties}`); -->
