@@ -1,32 +1,58 @@
-body
-{
-    background-color: rgb(25,25,25);
-    color: white;
+body {
+    background-color: #121212; 
+    color: #ffffff;
     font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    margin: 0;
 }
-.title
-{
+
+.gameContainer {
+    background-color: #1e1e1e; 
+    padding: 20px;
+    border-radius: 10px; 
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); 
+}
+
+p, .title {
     font-size: 30px;
     font-weight: bold;
+    text-align: center;
 }
-.move-icon
-{
+
+.move-icon {
     height: 50px;
 }
-.move-button
-{
-    background-color: transparent;
-    border: 3px solid white;
+
+.move-button {
+    background-color: #333; 
+    border: 3px solid #ffffff;
     width: 120px;
     height: 120px;
     border-radius: 60px;
     margin-right: 10px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
 }
-.result
-{
+
+.move-button:hover {
+    background-color: #444; 
+    transform: scale(1.1);
+}
+
+.result {
     font-size: 25px;
     font-weight: bold;
     margin-top: 50px;
+    text-align: center;
+}
+
+.resultContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 

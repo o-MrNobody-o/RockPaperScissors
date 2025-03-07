@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div class="gameContainer">
 
     <p class="title">Rock Paper Scissor</p>
 
@@ -22,20 +23,14 @@
         <img class="move-icon" src="images/scissor-emoji.png">
     </button>
 
-    <p class="js-result result"></p>
-
-    <p class="js-moves"></p>
-
-    <p class="js-score"></p>
-
-    <button onclick="reseting()">Reset score</button>
-
+    <div class="resultContainer">
+        <p class="js-result result"></p>
+        <p class="js-moves"></p>
+        <p class="js-score"></p>
+        <button onclick="reseting()">Reset score</button>
+    </div>
     <script src="script.js"></script> 
+</div>
+
 </body>
 </html>
-
-<!-- ' You picked ' + playerMove + ' Computer picked '+ computerMove + ' ' + result -->
-<!--  alert(`You picked ${playerMove}. Computer picked ${computerMove}.
-     ${result}
-
-     Wins : ${score.wins} , Losses : ${score.losses} , Ties : ${score.ties}`); -->
